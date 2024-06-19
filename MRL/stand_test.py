@@ -43,10 +43,10 @@ def callback():
     for i in range(31):
         
         if i == 30:
-            _servos_angle.angles = foot_stand[i] + foot_stand[i] + foot_stand[i] + foot_stand[i]
+            stand_singal = foot_stand[i] + foot_stand[i] + foot_stand[i] + foot_stand[i]
         else:
-            _servos_angle.angles = foot_stand[i] + foot_stand[i+1] + foot_stand[i+1] + foot_stand[i]
-
+            stand_singal = foot_stand[i] + foot_stand[i+1] + foot_stand[i+1] + foot_stand[i]
+        _servos_angle.angles = stand_singal
         pub.publish(_servos_angle)
         time.sleep(0.1)
 
