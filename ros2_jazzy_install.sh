@@ -66,7 +66,6 @@ sh -c "echo \"alias cb='cd ~/$colcon_workspace && colcon build --symlink-install
 
 sh -c "echo \"\" >> ~/.bashrc"
 sh -c "echo \"source /opt/ros/$ros_version/setup.bash\" >> ~/.bashrc"
-sh -c "echo \"source ~/$colcon_workspace/install/local_setup.bash\" >> ~/.bashrc"
 sh -c "echo \"source ~/$colcon_workspace/install/setup.bash\" >> ~/.bashrc"
 
 sh -c "echo \"export ROS_DOMAIN_ID=30 # 0~101\" >> ~/.bashrc"
